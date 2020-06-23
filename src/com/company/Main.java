@@ -70,5 +70,38 @@ public class Main {
         double weightInPounds = 200d;
         double weightInKilograms = weightInPounds * .45359237d;
         System.out.println("\nWeight in Kilograms = " + weightInKilograms);
+
+        // Chars
+        char myChar = 'D';
+        char myUnicodeChar = '\u0044';
+        System.out.println("\nTesting chars: ");
+        System.out.println(myChar);
+        System.out.println(myUnicodeChar);
+        char myCopyrightChar = '\u00a9';
+        System.out.println(myCopyrightChar);
+
+        // Booleans - either true or false
+        boolean myTrueBooleanValue = true;
+        boolean myFalseBooleanValue = false;
+
+        // String - Not a primitive type, technically a class
+        String myString = "This is a string";
+        System.out.println("\nTesting Strings: ");
+        System.out.println("myString = " + myString);
+        myString = myString + ", and most sequences of characters.";
+        System.out.println("myString = " + myString);
+        myString = myString + " \u00A9 2020";
+        System.out.println("myString = " + myString);
+
+        // Cannot add string like the are ints, doubles, floats, etc
+        String numberString = "250.55";
+        numberString = numberString + "49.95";
+        System.out.println(numberString);
+
+        // Int get converted and then added on to string, they do not add or have any type of calculation
+        String lastString = "10";
+        int myInt = 50;
+        lastString = lastString + myInt;
+        System.out.println("lastString = " + lastString);
     }
 }
