@@ -42,5 +42,33 @@ public class Main {
         int myTotal = (myMinIntValue / 2);
         byte myNewByteValue = (byte)(myMinByteValue / 2);
         short myNewShortValue = (short)(myMinShortValue / 2);
+        
+        // Finding max and min of float
+        float myMinFloatValue = Float.MIN_VALUE;
+        float myMaxFloatValue = Float.MAX_VALUE;
+        System.out.println("\nFinding min and max of float:");
+        System.out.println(myMinFloatValue);
+        System.out.println(myMaxFloatValue);
+        
+        // Finding max and min of double
+        double myMinDoubleValue = Double.MIN_VALUE;
+        double myMaxDoubleValue = Double.MAX_VALUE;
+        System.out.println("\nFinding min and max of double:");
+        System.out.println(myMinDoubleValue);
+        System.out.println(myMaxDoubleValue);
+
+        // int vs float vs double
+        int myIntValue = 5 / 3;
+        float myFloatValue = 5 / 3.0f;
+        double myDoubleValue = 5 / 3.0d;
+        System.out.println("\nMyIntValue = " + myIntValue);
+        System.out.println("MyFloatValue = " + myFloatValue);
+        System.out.println("MyDoubleValue = " + myDoubleValue);
+
+        // Challenge:
+        // Convert pounds to kilograms
+        double weightInPounds = 200d;
+        double weightInKilograms = weightInPounds * .45359237d;
+        System.out.println("\nWeight in Kilograms = " + weightInKilograms);
     }
 }
