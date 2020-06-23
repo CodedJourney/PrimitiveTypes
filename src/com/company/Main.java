@@ -37,5 +37,10 @@ public class Main {
         System.out.println("\nFinding min and max of long:");
         System.out.println(myMinLongValue);
         System.out.println(myMaxLongValue);
+
+        // Casting in Java
+        int myTotal = (myMinIntValue / 2);
+        byte myNewByteValue = (byte)(myMinByteValue / 2);
+        short myNewShortValue = (short)(myMinShortValue / 2);
     }
 }
